@@ -78,6 +78,7 @@ You can access all the live, fully functional tools on our official website:
 For detailed study material, mock tests, and organized question banks that complement these tools, download the BankWiser Pro mobile application:
 
 ➡️ Download on Google Play Store: https://play.google.com/store/apps/details?id=bankwiser.bankpromotion.material
+
 💻 Contributing & Disclaimer
 
 Feel free to clone this repository, review the vanilla JavaScript logic, and suggest improvements. We appreciate bankers and developers contributing to better accuracy and functionality.

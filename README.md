@@ -1,6 +1,6 @@
 🏦 Bank Promotion Exam Prep: Essential Financial Calculators
 
-This repository contains the full source code (HTML, CSS, and JavaScript) for a suite of practical financial calculators developed specifically for Indian banking professionals preparing for competitive promotion exams (e.g., JMGS-I to MMGS-II, etc.) and for enhancing daily work efficiency.
+This repository contains the full source code (HTML, CSS, and JavaScript) for a suite of practical financial calculators. These tools are developed specifically for Indian banking professionals preparing for competitive promotion exams (e.g., JMGS-I to MMGS-II, etc.) and for enhancing daily work efficiency.
 
 The code here powers the live web utility and is an integral part of the BankWiser Pro learning ecosystem.
 ✨ Focus: Accuracy and Exam Relevance
@@ -68,21 +68,18 @@ Quick reference tool for understanding tax liability and deductions (India speci
 	
 
 View Live IT Calculator
-🚀 The BankWiser Pro Advantage
+🚀 Live Application & Backlink
+🌐 Access the Full Suite
 
-This code is part of a larger mission to provide comprehensive resources for aspiring banking leaders.
-📱 Get the Full Exam Prep Experience
+You can access all the live, fully functional tools on our official website:
+➡️ https://promotionstudymaterial.com/
+📱 Complementary Exam App
 
-For study material, mock tests, and organized question banks that complement these tools, download the BankWiser Pro mobile application:
+For detailed study material, mock tests, and organized question banks that complement these tools, download the BankWiser Pro mobile application:
 
 ➡️ Download on Google Play Store: https://play.google.com/store/apps/details?id=bankwiser.bankpromotion.material
-🌐 Contributing & Backlinks
+💻 Contributing & Disclaimer
 
-Feel free to clone this repository, review the vanilla JavaScript logic, and suggest improvements. We appreciate developers and bankers contributing to better accuracy and functionality.
-
-By linking to this repository and using the live tools, you support a community dedicated to professional growth in banking.
-License & Disclaimer
-
-This project is open-source under the MIT License.
+Feel free to clone this repository, review the vanilla JavaScript logic, and suggest improvements. We appreciate bankers and developers contributing to better accuracy and functionality.
 
 Disclaimer: These tools are intended for estimation, educational, and quick verification purposes only. Always consult official banking circulars and software for final, regulatory-compliant calculations.

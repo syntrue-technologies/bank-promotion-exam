@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Advanced Income Tax Calculator (India) - New vs Old Regime Comparison | BankWiser Pro</title>
-    <meta name="description" content="Calculate Income Tax liability for the current financial year in India. Compare tax savings under the New Regime (Simplified) vs. Old Regime (Deductions) using HRA, 80C, 80D, and Home Loan interest.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/it.php">
+    <meta name="description" content="Compare tax liability under the New vs. Old tax regimes. Instant calculation for FY 2024-25, including deductions like 80C, HRA, and home loan interest.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Income Tax Calculator (India) - New vs Old Regime | BankWiser Pro">
+    <meta property="og:description" content="Easily compare your tax outgo under the new and old tax regimes. Make an informed decision for the current financial year.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/it.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Income Tax Calculator (New vs Old)">
+    <meta name="twitter:description" content="Calculate and compare your income tax liability under both tax regimes to maximize your savings.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -24,6 +39,51 @@
 </script>  
   
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Advanced Income Tax Calculator (India) - New vs Old Regime Comparison | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/it.php",
+  "description": "Compare tax liability under the New vs. Old tax regimes. Instant calculation for FY 2024-25, including deductions like 80C, HRA, and home loan interest.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Income Tax Comparison (FY 2024-25)"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between the New and Old Tax Regimes in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Old Tax Regime allows for claiming numerous deductions and exemptions like HRA, 80C, 80D, etc., but has higher tax slab rates. The New Tax Regime offers lower tax slab rates but disallows most deductions, offering a simpler tax filing process. The Standard Deduction of ₹50,000 is available under both regimes for salaried individuals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the tax rebate under Section 87A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tax rebate under Section 87A makes your tax liability zero if your taxable income is below a certain threshold. For the New Regime, this limit is ₹7 Lakhs. For the Old Regime, the limit is ₹5 Lakhs."
+      }
+    }
+  ]
+}
+</script>
 <style>
     #oldRegimeDeductions {
         border: 1px solid #E2E8F0;

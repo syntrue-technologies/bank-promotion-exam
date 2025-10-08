@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Amortization Schedule with Moratorium | Banker's Tool | BankWiser Pro</title>
-    <meta name="description" content="Generate complete amortization schedule with Principal, Interest, EMI, and Moratorium period calculation for any loan.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/amortization.php">
+    <meta name="description" content="Generate a complete loan amortization schedule, including principal, interest, and EMI breakdown. Features moratorium period calculation for accurate financial planning.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Loan Amortization Schedule Calculator | BankWiser Pro">
+    <meta property="og:description" content="Generate a detailed loan amortization schedule with moratorium period logic. Essential for bankers and borrowers.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/amortization.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Amortization Schedule Calculator">
+    <meta name="twitter:description" content="Visualize your loan repayment with a detailed amortization table, including moratorium impact.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -27,6 +42,51 @@
 </script>
     
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Amortization Schedule with Moratorium | Banker's Tool | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/amortization.php",
+  "description": "Generate a complete loan amortization schedule, including principal, interest, and EMI breakdown. Features moratorium period calculation for accurate financial planning.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Amortization Schedule Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a moratorium period in a loan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The moratorium period is a time during the loan term when the borrower is not required to make EMI payments. However, interest continues to accrue during this period and is typically capitalized—added to the principal loan amount—at the end of the moratorium."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is an EMI broken down into principal and interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In an amortization schedule, each EMI payment consists of two components: interest and principal. Initially, the interest component is high, and the principal component is low. As the loan matures, the interest portion decreases while the principal portion increases, even though the EMI amount remains constant."
+      }
+    }
+  ]
+}
+</script>
 <style>
     /* Additional styles for amortization table */
     .amortization-section {

@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>EMI Calculator | Amortization Guide & Floating Rate Logic | BankWiser Pro</title>
-    <meta name="description" content="Advanced EMI Calculator. Calculates monthly EMI, Total Interest for Home Loan, Car Loan, Education Loan etc.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/emi.php">
+    <meta name="description" content="Advanced EMI Calculator for Home, Car, and Personal Loans. Calculate monthly EMI, total interest, and see a complete amortization guide.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Professional Loan EMI Calculator | BankWiser Pro">
+    <meta property="og:description" content="Calculate your loan EMI, total interest, and total payment instantly. A key tool for financial planning.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/emi.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Instant Loan EMI Calculator">
+    <meta name="twitter:description" content="Quickly calculate EMI for home, car, or personal loans. Essential tool for Indian banking professionals.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -24,6 +39,59 @@
 </script>  
   
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "EMI Calculator | Amortization Guide & Floating Rate Logic | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/emi.php",
+  "description": "Advanced EMI Calculator for Home, Car, and Personal Loans. Calculate monthly EMI, total interest, and see a complete amortization guide.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Professional Loan EMI Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a Fixed and Floating Interest Rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Fixed Rate remains constant throughout the loan tenure, providing predictable EMI payments. A Floating Rate is linked to an external benchmark (like RLLR or MCLR) and changes periodically, causing the interest rate and potentially the EMI or tenure to fluctuate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does pre-payment affect the Amortization Schedule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a borrower makes a pre-payment, the amount directly reduces the outstanding principal. This results in the remaining EMI payments having a much larger principal component, significantly reducing the total interest paid and often shortening the loan tenure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there any tax benefit on a Home Loan EMI in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Under Section 80C of the Income Tax Act, the principal component of the EMI is deductible up to ₹1.5 Lakh per year. Additionally, the interest component is deductible up to ₹2 Lakh per year under Section 24(b) for self-occupied property."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="home-link">

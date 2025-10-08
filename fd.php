@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Fixed Deposit (FD) Interest & Maturity Calculator | BankWiser Pro</title>
-    <meta name="description" content="Term Deposit (FD) Calculator: calculate FD maturity value and interest earned based on mandatory quarterly compounding. Includes TDS and premature withdrawal rules.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/fd.php">
+    <meta name="description" content="Calculate FD maturity value and interest earned with quarterly compounding. Includes TDS and premature withdrawal rules for Indian banks.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Fixed Deposit (FD) Calculator | BankWiser Pro">
+    <meta property="og:description" content="Calculate FD maturity amount and interest earned with quarterly compounding. Essential for bankers and investors.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/fd.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Fixed Deposit (FD) Calculator">
+    <meta name="twitter:description" content="Instantly calculate maturity value for Fixed Deposits with quarterly compounding logic.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -24,7 +39,59 @@
 </script>  
   
 <link rel="stylesheet" href="css/style.css">
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Fixed Deposit (FD) Interest & Maturity Calculator | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/fd.php",
+  "description": "Calculate FD maturity value and interest earned with quarterly compounding. Includes TDS and premature withdrawal rules for Indian banks.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Professional Fixed Deposit (FD) Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum tenure for a Fixed Deposit in commercial banks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As per RBI guidelines, the minimum tenure for a Fixed Deposit is 7 days. The maximum tenure is typically 10 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is interest on a prematurely withdrawn FD calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When an FD is broken, the interest is paid at the lower of two rates: the rate applicable for the tenure the FD actually remained with the bank, or the original contracted rate. A penalty (e.g., 1%) is usually deducted from this new interest rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a loan be availed against a Tax-Saver FD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Tax-Saver FDs have a mandatory 5-year lock-in period and do not allow for premature withdrawal or loans, as they qualify for tax deductions under Section 80C."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="home-link">

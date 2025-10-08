@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Age Calculator for Bankers | Calculate Age from Date of Birth | BankWiser Pro</title>
+    <link rel="canonical" href="https://promotionstudymaterial.com/agecalc.php">
     <meta name="description" content="Quickly and accurately calculate a borrower's age from their Date of Birth (DOB) as of today or a specific date. Essential for KYC and loan eligibility checks.">
-    <meta name="keywords" content="age calculator, calculate age from DOB, banker tool, KYC age calculation, loan eligibility age, BankWiser Pro">
     
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Age Calculator for Bankers | BankWiser Pro">
+    <meta property="og:description" content="Calculate borrower's age from DOB for KYC checks and loan eligibility. An essential tool for banking professionals.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/agecalc.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Age Calculator for Banking Professionals">
+    <meta name="twitter:description" content="Instantly calculate age from Date of Birth for KYC and loan processing.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -25,6 +39,60 @@
 </script>
     
 <link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Age Calculator for Bankers | Calculate Age from Date of Birth | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/agecalc.php",
+  "description": "Quickly and accurately calculate a borrower's age from their Date of Birth (DOB) as of today or a specific date. Essential for KYC and loan eligibility checks.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Borrower Age Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is a borrower's age important in banking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accurately determining a borrower's age is crucial for KYC compliance, assessing loan eligibility by ensuring they are within the bank's minimum and maximum age criteria, and calculating the maximum loan tenure, which is often constrained by the borrower's age at loan maturity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does age affect loan tenure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The maximum permitted loan tenure is frequently constrained by the borrower's age at loan maturity. For example, if a bank's maximum age for a borrower at loan maturity is 60, a 45-year-old applicant can only be sanctioned a loan for a maximum of 15 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the significance of age for minor accounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For minor accounts, the exact age is crucial to determine when the account holder reaches the age of majority (18 years), at which point the account status needs to be converted."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

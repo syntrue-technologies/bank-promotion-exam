@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Recurring Deposit (RD) Calculator with Quarterly Compounding | BankWiser Pro</title>
-    <meta name="description" content="Recurring Deposit (RD) Calculator calculate Maturity Amount and Interest Earned with accurate quarterly compounding logic. Includes Indian tax laws (TDS) and RBI guidelines.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/rd.php">
+    <meta name="description" content="Calculate RD maturity amount and interest with quarterly compounding. Includes TDS rules and premature closure info for Indian banks.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Recurring Deposit (RD) Calculator | BankWiser Pro">
+    <meta property="og:description" content="Instantly calculate maturity value for Recurring Deposits with quarterly compounding logic.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/rd.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: Recurring Deposit (RD) Calculator">
+    <meta name="twitter:description" content="Plan your savings with our RD calculator. See maturity amount and interest earned.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -24,6 +39,59 @@
 </script>  
   
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Recurring Deposit (RD) Calculator with Quarterly Compounding | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/rd.php",
+  "description": "Calculate RD maturity amount and interest with quarterly compounding. Includes TDS rules and premature closure info for Indian banks.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Professional Recurring Deposit (RD) Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum tenure for a Recurring Deposit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum tenure for a Recurring Deposit is typically 6 months, and the maximum is usually 10 years (120 months)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is interest from a Recurring Deposit taxable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, interest earned on RDs is fully taxable as per your income tax slab. Banks are required to deduct TDS at 10% if the interest earned across all branches exceeds ₹40,000 in a financial year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I miss an RD installment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Banks levy a small penalty for missing an RD installment. If you miss several consecutive installments, the bank may have the right to close the account prematurely."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="home-link">

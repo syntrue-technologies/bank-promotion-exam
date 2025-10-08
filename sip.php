@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>SIP vs Lumpsum Calculator | Mutual Fund Investment & Wealth Planning | BankWiser Pro</title>
-    <meta name="description" content="Compare SIP vs Lumpsum investments with our professional calculator. Understand compounding, returns, and taxation for mutual funds in India. Essential for wealth managers and investors.">
-    
+    <link rel="canonical" href="https://promotionstudymaterial.com/sip.php">
+    <meta name="description" content="Compare SIP vs Lumpsum investments. Calculate mutual fund returns and understand the power of compounding for wealth creation.">
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="SIP & Lumpsum Mutual Fund Calculator | BankWiser Pro">
+    <meta property="og:description" content="Calculate and compare returns for SIP and Lumpsum investments to make informed financial decisions.">
+    <meta property="og:image" content="https://promotionstudymaterial.com/og-image.jpg">
+    <meta property="og:url" content="https://promotionstudymaterial.com/sip.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BankWiser Pro: SIP vs Lumpsum Calculator">
+    <meta name="twitter:description" content="Estimate your mutual fund returns for both SIP and Lumpsum investment strategies.">
+    <meta name="twitter:image" content="https://promotionstudymaterial.com/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -24,6 +39,51 @@
 </script>  
   
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "SIP vs Lumpsum Calculator | Mutual Fund Investment & Wealth Planning | BankWiser Pro",
+  "url": "https://promotionstudymaterial.com/sip.php",
+  "description": "Compare SIP vs Lumpsum investments. Calculate mutual fund returns and understand the power of compounding for wealth creation.",
+  "mainEntity": {
+    "@type": "Calculator",
+    "name": "Professional SIP vs Lumpsum Calculator"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BankWiser Pro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between SIP and Lumpsum investing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Systematic Investment Plan (SIP) involves investing a fixed amount of money at regular intervals (e.g., monthly). A Lumpsum investment is a one-time, large investment. SIPs benefit from rupee cost averaging and are good for disciplined saving, while lumpsum investments can be beneficial if timed well with market conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Rupee Cost Averaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rupee Cost Averaging is an investment strategy where you invest a fixed amount of money at regular intervals. This results in buying more units of an investment when prices are low and fewer units when prices are high, which can lower the average cost per unit over time."
+      }
+    }
+  ]
+}
+</script>
 <style>
     .radio-group {
         display: flex;

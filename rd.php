@@ -8,6 +8,7 @@
     <title>Recurring Deposit (RD) Calculator with Quarterly Compounding | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/rd.php">
     <meta name="description" content="Calculate RD maturity amount and interest with quarterly compounding. Includes TDS rules and premature closure info for Indian banks.">
+    <meta name="keywords" content="rd calculator, recurring deposit, rd interest calculator, rd maturity amount, post office rd, bank rd, bankwiser pro">
 
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Recurring Deposit (RD) Calculator | BankWiser Pro">
@@ -67,26 +68,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the minimum tenure for a Recurring Deposit?",
+      "name": "Is there a difference in compounding frequency for RD and FD in banks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The minimum tenure for a Recurring Deposit is typically 6 months, and the maximum is usually 10 years (120 months)."
+        "text": "Yes. While Fixed Deposit (FD) interest is usually compounded quarterly, it is paid out (or re-invested) annually. Recurring Deposit (RD) interest is calculated on monthly installments but compounded quarterly. This quarterly compounding is essential for accurately computing the maturity amount on RDs."
       }
     },
     {
       "@type": "Question",
-      "name": "Is interest from a Recurring Deposit taxable?",
+      "name": "What is the minimum and maximum tenure for a Recurring Deposit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, interest earned on RDs is fully taxable as per your income tax slab. Banks are required to deduct TDS at 10% if the interest earned across all branches exceeds ₹40,000 in a financial year."
+        "text": "The minimum tenure for a Recurring Deposit is typically 6 months. The tenure can be in multiples of 3 months thereafter (e.g., 9, 12, 15 months). The maximum tenure usually goes up to 10 years (120 months)."
       }
     },
     {
       "@type": "Question",
-      "name": "What happens if I miss an RD installment?",
+      "name": "If a customer misses an installment, what is the bank's penalty/procedure?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Banks levy a small penalty for missing an RD installment. If you miss several consecutive installments, the bank may have the right to close the account prematurely."
+        "text": "Banks levy a penalty for default on monthly installments, typically charged as a fine (e.g., ₹1.5 to ₹2 per ₹100 of installment) for the month of default. If the default continues for a specified period (e.g., 6 consecutive months), the bank may have the right to prematurely close the RD account."
       }
     }
   ]

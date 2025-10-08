@@ -8,6 +8,7 @@
     <title>Advanced Income Tax Calculator (India) - New vs Old Regime Comparison | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/it.php">
     <meta name="description" content="Compare tax liability under the New vs. Old tax regimes. Instant calculation for FY 2024-25, including deductions like 80C, HRA, and home loan interest.">
+    <meta name="keywords" content="income tax calculator, tax calculator india, new tax regime, old tax regime, tax comparison, 80c deduction, bankwiser pro">
 
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Income Tax Calculator (India) - New vs Old Regime | BankWiser Pro">
@@ -67,19 +68,27 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the difference between the New and Old Tax Regimes in India?",
+      "name": "What is the 'Rebate' under Section 87A for both regimes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Old Tax Regime allows for claiming numerous deductions and exemptions like HRA, 80C, 80D, etc., but has higher tax slab rates. The New Tax Regime offers lower tax slab rates but disallows most deductions, offering a simpler tax filing process. The Standard Deduction of ₹50,000 is available under both regimes for salaried individuals."
+        "text": "Section 87A offers a full tax rebate if the taxable income does not exceed a certain limit. For the New Regime, the limit is ₹7 Lakh. For the Old Regime, the limit is ₹5 Lakh. This means those earning just above these limits may pay significantly more tax."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the tax rebate under Section 87A?",
+      "name": "Is the Standard Deduction of ₹50,000 applicable in both regimes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The tax rebate under Section 87A makes your tax liability zero if your taxable income is below a certain threshold. For the New Regime, this limit is ₹7 Lakhs. For the Old Regime, the limit is ₹5 Lakhs."
+        "text": "Yes, for the current Financial Year, the Standard Deduction of ₹50,000 for salaried and pensioners is applicable under both the Old and the New Tax Regimes. This significantly improved the benefit of the New Regime."
       }
+    },
+    {
+        "@type": "Question",
+        "name": "How is the interest on a self-occupied Home Loan treated under the two regimes?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under the Old Regime, interest paid on a self-occupied house property loan (Sec 24b) is deductible up to ₹2 Lakh per annum. Under the New Regime, this deduction is not available, making the Old Regime often better for high home loan borrowers."
+        }
     }
   ]
 }

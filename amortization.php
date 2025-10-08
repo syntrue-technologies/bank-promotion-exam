@@ -8,6 +8,7 @@
     <title>Amortization Schedule with Moratorium | Banker's Tool | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/amortization.php">
     <meta name="description" content="Generate a complete loan amortization schedule, including principal, interest, and EMI breakdown. Features moratorium period calculation for accurate financial planning.">
+    <meta name="keywords" content="amortization schedule, loan amortization, emi schedule, loan repayment schedule, moratorium period, bank loan calculator, bankwiser pro">
 
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Loan Amortization Schedule Calculator | BankWiser Pro">
@@ -68,6 +69,14 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an Amortization Schedule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An amortization schedule is a complete table of periodic loan payments, showing the amount of principal and the amount of interest that comprise each payment until the loan is paid off at the end of its term."
+      }
+    },
     {
       "@type": "Question",
       "name": "What is a moratorium period in a loan?",
@@ -237,6 +246,47 @@
     </table>
 </div>
 
+<div class="content-section">
+    <h2>Banker's Guide: Understanding Amortization with Moratorium</h2>
+
+    <p>
+        The Amortization Schedule is the backbone of any loan, detailing every payment over the loan's life, showing how the EMI is split between Principal Repayment and Interest Paid. This is a critical tool for bankers and borrowers alike to track the loan balance and interest accrual accurately.
+    </p>
+
+    <h3>Moratorium Period (Interest Bearing)</h3>
+    <p>
+        The moratorium (or holiday) period is a key concept in project finance and education loans. During this period, the borrower typically does not pay the EMI. However, <strong>interest continues to accrue</strong> (simple interest) and is added to the principal balance (capitalized) at the end of the moratorium. This capitalized amount becomes the new principal for calculating the EMI for the remaining tenure. Our calculator factors in this capitalization to provide a truly accurate schedule.
+    </p>
+
+    <h3>Understanding Loan Repayment Breakdown</h3>
+    <ul style="list-style: disc; padding-left: 20px;">
+        <li><strong>Principal O/S (Beg):</strong> The outstanding loan amount at the beginning of the month.</li>
+        <li><strong>EMI/Payment:</strong> The fixed monthly payment (or only interest payment during the moratorium).</li>
+        <li><strong>Interest Paid:</strong> The portion of the EMI that goes towards the interest for that month.</li>
+        <li><strong>Principal Repayment:</strong> The portion of the EMI that goes towards reducing the outstanding principal. This component increases with time as the interest component decreases.</li>
+    </ul>
+
+    <p>
+        Use the BankWiser Pro Amortization Schedule Calculator to quickly and accurately forecast your loan liabilities, including the impact of any moratorium period on your final loan principal and total interest burden.
+    </p>
+</div>
+
+<div class="content-section faq-section">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <details>
+        <summary>What is an Amortization Schedule?</summary>
+        <p>An amortization schedule is a complete table of periodic loan payments, showing the amount of principal and the amount of interest that comprise each payment until the loan is paid off at the end of its term.</p>
+    </details>
+    <details>
+        <summary>What is a moratorium period in a loan?</summary>
+        <p>The moratorium period is a time during the loan term when the borrower is not required to make EMI payments. However, interest continues to accrue during this period and is typically capitalized—added to the principal loan amount—at the end of the moratorium.</p>
+    </details>
+    <details>
+        <summary>How is an EMI broken down into principal and interest?</summary>
+        <p>In an amortization schedule, each EMI payment consists of two components: interest and principal. Initially, the interest component is high, and the principal component is low. As the loan matures, the interest portion decreases while the principal portion increases, even though the EMI amount remains constant.</p>
+    </details>
+</div>
+
 <div class="calculator-header">Essential Banker Tools</div>
 <div class="calculator-grid">
     			
@@ -271,32 +321,6 @@
     </a>
   
 </div>
-
-<div class="content-section">
-    <h2>Banker's Guide: Understanding Amortization with Moratorium</h2>
-    
-    <p>
-        The Amortization Schedule is the backbone of any loan, detailing every payment over the loan's life, showing how the EMI is split between Principal Repayment and Interest Paid. This is a critical tool for bankers and borrowers alike to track the loan balance and interest accrual accurately.
-    </p>
-    
-    <h3>Moratorium Period (Interest Bearing)</h3>
-    <p>
-        The moratorium (or holiday) period is a key concept in project finance and education loans. During this period, the borrower typically does not pay the EMI. However, <strong>interest continues to accrue</strong> (simple interest) and is added to the principal balance (capitalized) at the end of the moratorium. This capitalized amount becomes the new principal for calculating the EMI for the remaining tenure. Our calculator factors in this capitalization to provide a truly accurate schedule.
-    </p>
-
-    <h3>Understanding Loan Repayment Breakdown</h3>
-    <ul style="list-style: disc; padding-left: 20px;">
-        <li>Principal O/S (Beg): The outstanding loan amount at the beginning of the month.</li>
-        <li>EMI/Payment: The fixed monthly payment (or only interest payment during the moratorium).</li>
-        <li>Interest Paid: The portion of the EMI that goes towards the interest for that month.</li>
-        <li>Principal Repayment: The portion of the EMI that goes towards reducing the outstanding principal. This component increases with time as the interest component decreases.</li>
-    </ul>
-    
-    <p>
-        Use the BankWiser Pro Amortization Schedule Calculator to quickly and accurately forecast your loan liabilities, including the impact of any moratorium period on your final loan principal and total interest burden.
-    </p>
-
-    </div>
 
 <div class="branding">
     Tool for Banking Professionals

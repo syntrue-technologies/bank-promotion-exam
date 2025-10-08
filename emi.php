@@ -8,6 +8,7 @@
     <title>EMI Calculator | Amortization Guide & Floating Rate Logic | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/emi.php">
     <meta name="description" content="Advanced EMI Calculator for Home, Car, and Personal Loans. Calculate monthly EMI, total interest, and see a complete amortization guide.">
+    <meta name="keywords" content="emi calculator, loan calculator, home loan emi, car loan emi, personal loan emi, interest calculator, bankwiser pro">
 
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Professional Loan EMI Calculator | BankWiser Pro">
@@ -78,7 +79,23 @@
       "name": "How does pre-payment affect the Amortization Schedule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When a borrower makes a pre-payment, the amount directly reduces the outstanding principal. This results in the remaining EMI payments having a much larger principal component, significantly reducing the total interest paid and often shortening the loan tenure."
+        "text": "When a borrower makes a pre-payment (partial or full), the amount directly reduces the outstanding principal. This results in the remaining EMI payments having a much larger principal component, significantly reducing the total interest paid and often shortening the loan tenure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the P-Segment (Priority Sector) target relevance for housing loans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Certain segments of Home Loans, especially those involving lower amounts or specific beneficiary groups, qualify under the bank's Priority Sector Lending (PSL) targets mandated by the RBI. This classification is vital for meeting regulatory goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a 'Step-up' or 'Step-down' EMI option?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Step-up EMI allows the borrower to start with lower EMIs that gradually increase over time, aligning with expected income growth. A Step-down EMI is the opposite—higher payments initially, decreasing later—suited for those expecting their income to drop after a certain period."
       }
     },
     {
@@ -86,7 +103,7 @@
       "name": "Is there any tax benefit on a Home Loan EMI in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Under Section 80C of the Income Tax Act, the principal component of the EMI is deductible up to ₹1.5 Lakh per year. Additionally, the interest component is deductible up to ₹2 Lakh per year under Section 24(b) for self-occupied property."
+        "text": "Yes. Under Section 80C of the Income Tax Act, the principal component of the EMI is deductible up to ₹1.5 Lakh per year. Additionally, the interest component is deductible up to ₹2 Lakh per year under Section 24(b) for self-occupied property (as of current tax laws)."
       }
     }
   ]

@@ -8,6 +8,7 @@
     <title>Bank Promotion Exam 2026 Prep: Study Material, MCQs & Syllabus | BankWiser Pro</title>
   	<link rel="canonical" href="https://promotionstudymaterial.com/">
     <meta name="description" content="Crack internal bank promotion exam with BankWiser Pro. Get exam-aligned notes, practice questions, audio summaries, and the complete syllabus.">
+    <meta name="keywords" content="bank promotion exam, bank promotion study material, bank promotion 2026, bankwiser pro, sbi promotion, bob promotion, rbi circulars, banking awareness">
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
 	<meta property="og:title" content="Bank Promotion Exam 2026 | BankWiser Pro">
 	<meta property="og:description" content="Topic-wise notes, MCQs, RBI updates & audio summaries to crack your internal bank promotion exam.">

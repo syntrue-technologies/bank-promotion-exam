@@ -8,6 +8,7 @@
     <title>Fixed Deposit (FD) Interest & Maturity Calculator | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/fd.php">
     <meta name="description" content="Calculate FD maturity value and interest earned with quarterly compounding. Includes TDS and premature withdrawal rules for Indian banks.">
+    <meta name="keywords" content="fd calculator, fixed deposit, term deposit, interest calculator, maturity calculator, indian banks, bankwiser pro">
 
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Fixed Deposit (FD) Calculator | BankWiser Pro">
@@ -70,23 +71,23 @@
       "name": "What is the minimum tenure for a Fixed Deposit in commercial banks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As per RBI guidelines, the minimum tenure for a Fixed Deposit is 7 days. The maximum tenure is typically 10 years."
+        "text": "As per RBI guidelines, the minimum tenure for a Fixed Deposit is 7 days. The maximum tenure is typically 10 years. Deposits below 7 days are generally not allowed, except in special cases such as inter-bank deposits."
       }
     },
     {
       "@type": "Question",
-      "name": "How is interest on a prematurely withdrawn FD calculated?",
+      "name": "Is quarterly interest compounding the same as quarterly interest payout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When an FD is broken, the interest is paid at the lower of two rates: the rate applicable for the tenure the FD actually remained with the bank, or the original contracted rate. A penalty (e.g., 1%) is usually deducted from this new interest rate."
+        "text": "No. Compounding is the frequency at which earned interest is added back to the principal to start earning interest itself. Payout is the frequency at which the bank actually sends the accumulated interest to the customer's account (e.g., monthly, quarterly, or at maturity). For Cumulative FDs, compounding is typically quarterly, but payout is at maturity."
       }
     },
     {
       "@type": "Question",
-      "name": "Can a loan be availed against a Tax-Saver FD?",
+      "name": "Can a loan facility be availed against a Tax-Saver FD?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Tax-Saver FDs have a mandatory 5-year lock-in period and do not allow for premature withdrawal or loans, as they qualify for tax deductions under Section 80C."
+        "text": "No. Because Tax-Saver FDs qualify for deduction under Section 80C and have a mandatory 5-year lock-in period, banks cannot offer a loan or overdraft facility against these specific deposits. This rule ensures the tax benefit is utilized for long-term savings."
       }
     }
   ]

@@ -8,6 +8,7 @@
     <title>Age Calculator for Bankers | Calculate Age from Date of Birth | BankWiser Pro</title>
     <link rel="canonical" href="https://promotionstudymaterial.com/agecalc.php">
     <meta name="description" content="Quickly and accurately calculate a borrower's age from their Date of Birth (DOB) as of today or a specific date. Essential for KYC and loan eligibility checks.">
+    <meta name="keywords" content="age calculator, date of birth calculator, dob calculator, age verification, kyc compliance, loan eligibility, banking tools, bankwiser pro">
     
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Age Calculator for Bankers | BankWiser Pro">
@@ -79,7 +80,7 @@
       "name": "How does age affect loan tenure?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The maximum permitted loan tenure is frequently constrained by the borrower's age at loan maturity. For example, if a bank's maximum age for a borrower at loan maturity is 60, a 45-year-old applicant can only be sanctioned a loan for a maximum of 15 years."
+        "text": "The maximum permitted loan tenure is frequently constrained by the borrower's age at maturity. For example, if a bank's maximum age for a borrower at loan maturity is 60, a 45-year-old applicant can only be sanctioned a loan for a maximum of 15 years."
       }
     },
     {
@@ -119,6 +120,50 @@
     </div>
 </div>
 
+<div class="content-section">
+    <h2>Banker's Guide: Accurate Age Calculation for Loan Eligibility</h2>
+
+    <p>
+        Accurately determining a borrower's age is a fundamental step in the Know Your Customer (KYC) process and for assessing loan eligibility. Bankers must ensure that the borrower falls within the bank's minimum and maximum age criteria, both at the time of sanction and at the time of loan maturity. Our Age Calculator simplifies this critical step, allowing calculation of age as of today's date or any specified reference date.
+    </p>
+
+    <h3>Why Age Matters in Banking</h3>
+    <ul>
+        <li><strong>Maximum Age Limit:</strong> Most retail loans (like Home Loans or Personal Loans) have an upper age limit for borrowers, typically 60 years for salaried individuals and 65-70 years for self-employed individuals, often tied to their retirement age.</li>
+        <li><strong>Loan Tenure Calculation:</strong> The maximum permitted loan tenure is frequently constrained by the borrower's age at loan maturity. For example, if the maximum age at maturity is 60, a 45-year-old borrower can only be sanctioned a loan for a maximum of 15 years.</li>
+        <li><strong>Minor Accounts:</strong> For opening bank accounts for minors, the exact age is crucial to determine when the account holder attains majority (18 years) and the account status needs to be converted.</li>
+    </ul>
+
+    <h3>How to Use the Age Calculator</h3>
+    <p>
+        To ensure regulatory compliance, always refer to the borrower's Date of Birth (DOB) as mentioned on valid KYC documents (Aadhaar, Passport, Driving License, etc.).
+    </p>
+    <ol>
+        <li>Enter the Borrower's exact Date of Birth (DOB).</li>
+        <li>Leave the "Calculate Age As Of" field blank to find the age as of today.</li>
+        <li>Enter a specific future date (like the proposed loan maturity date) to check the borrower's age on that date, which is essential for compliance checks.</li>
+    </ol>
+    <p>
+        This essential tool ensures bankers can make swift and accurate decisions regarding eligibility and tenure, minimizing manual errors and speeding up the loan processing cycle.
+    </p>
+</div>
+
+<div class="content-section faq-section">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <details>
+        <summary>Why is a borrower's age important in banking?</summary>
+        <p>Accurately determining a borrower's age is crucial for KYC compliance, assessing loan eligibility by ensuring they are within the bank's minimum and maximum age criteria, and calculating the maximum loan tenure, which is often constrained by the borrower's age at loan maturity.</p>
+    </details>
+    <details>
+        <summary>How does age affect loan tenure?</summary>
+        <p>The maximum permitted loan tenure is frequently constrained by the borrower's age at maturity. For example, if a bank's maximum age for a borrower at loan maturity is 60, a 45-year-old applicant can only be sanctioned a loan for a maximum of 15 years.</p>
+    </details>
+    <details>
+        <summary>What is the significance of age for minor accounts?</summary>
+        <p>For minor accounts, the exact age is crucial to determine when the account holder reaches the age of majority (18 years), at which point the account status needs to be converted.</p>
+    </details>
+</div>
+
 <div class="calculator-header">Essential Banker Tools</div>
 <div class="calculator-grid">
     
@@ -152,35 +197,6 @@
         <span class="tile-name">Income Tax Calculator (India)</span>
     </a>
     
-</div>
-
-<div class="content-section">
-    <h2>Banker's Guide: Accurate Age Calculation for Loan Eligibility</h2>
-    
-    <p>
-        Accurately determining a borrower's age is a fundamental step in the Know Your Customer (KYC) process and for assessing loan eligibility. Bankers must ensure that the borrower falls within the bank's minimum and maximum age criteria, both at the time of sanction and at the time of loan maturity. Our Age Calculator simplifies this critical step, allowing calculation of age as of today's date or any specified reference date.
-    </p>
-
-    <h3>Why Age Matters in Banking</h3>
-    <ul>
-        <li>Maximum Age Limit: Most retail loans (like Home Loans or Personal Loans) have an upper age limit for borrowers, typically 60 years for salaried individuals and 65-70 years for self-employed individuals, often tied to their retirement age.</li>
-        <li>Loan Tenure Calculation: The maximum permitted loan tenure is frequently constrained by the borrower's age at loan maturity. For example, if the maximum age at maturity is 60, a 45-year-old borrower can only be sanctioned a loan for a maximum of 15 years.</li>
-        <li>Minor Accounts: For opening bank accounts for minors, the exact age is crucial to determine when the account holder attains majority (18 years) and the account status needs to be converted.</li>
-    </ul>
-    
-    <h3>How to Use the Age Calculator</h3>
-    <p>
-        To ensure regulatory compliance, always refer to the borrower's Date of Birth (DOB) as mentioned on valid KYC documents (Aadhaar, Passport, Driving License, etc.).
-    </p>
-    <ol>
-        <li>Enter the Borrower's exact Date of Birth (DOB).</li>
-        <li>Leave the "Calculate Age As Of" field blank to find the age as of today.</li>
-        <li>Enter a specific future date (like the proposed loan maturity date) to check the borrower's age on that date, which is essential for compliance checks.</li>
-    </ol>
-    <p>
-        This essential tool ensures bankers can make swift and accurate decisions regarding eligibility and tenure, minimizing manual errors and speeding up the loan processing cycle.
-    </p>
-
 </div>
 
 <div class="branding">

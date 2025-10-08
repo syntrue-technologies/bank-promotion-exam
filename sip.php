@@ -1,7 +1,3 @@
-<?php
-// PHP file for SIP vs Lumpsum Calculator - BankWiser Pro
-// Content optimized for SEO, mobile view, and Indian banking/wealth management audience.
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +9,9 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </noscript>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
@@ -27,336 +23,35 @@
   gtag('config', 'G-BJ517ZS7X0');
 </script>  
   
-    <style>
-        /* Replicating key variables from your existing pages */
-        :root {
-            --vermillion: #FF5733;
-            --vermillion-light: #FF9A8B;
-            --stardust: rgba(255,255,255,0.9);
-            --bg-dark: #24243E;
-            --bg-mid: #302B63;
-        }
-
- /* --- HOME LINK STYLING --- */
-.home-link {
-    display: block; /* Makes it take up full width for easy clicking */
-    text-align: left;
-    max-width: 450px; /* Matches the container width */
-    width: 95%;
-    margin: 10px auto 0;
-}
-
-.home-link a {
-    color: var(--vermillion-light); /* Uses your brand color */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: color 0.3s;
-    font-size: 1rem;
-}
-
-.home-link a:hover {
-    color: var(--vermillion);
-}
-
-/* Ensure the container moves down slightly to accommodate the link */
-.container {
-    margin-top: 10px; 
-}
-      
-        /* -------------------------------------------
-           GLOBAL STYLES & BACKGROUND
-           ------------------------------------------- */
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: linear-gradient(-45deg, #0F0C29, var(--bg-mid), var(--bg-dark));
-            color: var(--stardust);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 10px; 
-            box-sizing: border-box;
-            margin: 0;
-        }
-        
-        /* Typography for Content Sections */
-        .content-section p, .content-section li {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: var(--stardust);
-        }
-        
-        /* -------------------------------------------
-           CALCULATOR CONTAINER (Responsive)
-           ------------------------------------------- */
-        .container {
-            max-width: 95%; 
-            width: 450px; 
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(36, 36, 62, 0.9);
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            border: 1px solid var(--bg-mid);
-        }
-        
-        h1 {
-            font-size: 1.6rem; 
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            color: var(--vermillion-light);
-        }
-        
-        /* -------------------------------------------
-           INPUT STYLES
-           ------------------------------------------- */
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: 600;
-            color: var(--stardust);
-            font-size: 1rem;
-        }
-        
-        input[type="text"], input[type="number"] {
-            width: 95%; 
-            padding: 12px;
-            margin-top: 5px;
-            border: 1px solid var(--bg-mid);
-            border-radius: 6px;
-            background-color: var(--bg-dark);
-            color: white;
-            font-size: 1.05rem;
-            transition: border-color 0.3s;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        
-        input:focus {
-            outline: none;
-            border-color: var(--vermillion);
-        }
-        
-        button {
-            width: 100%;
-            padding: 15px;
-            margin-top: 30px;
-            background: var(--vermillion);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.1rem;
-            font-weight: 700;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 5px 15px rgba(255, 87, 51, 0.4);
-        }
-        
-        button:hover {
-            background-color: #e54d2e;
-            transform: translateY(-1px);
-        }
-        
-         /* --- CALCULATOR TILES SECTION --- */
-        .calculator-header {
-            margin-top: 50px;
-            font-size: 1.8rem;
-            color: white;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .calculator-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto 50px;
-            padding: 0 10px;
-        }
-        .calculator-tile {
-            background-color: var(--bg-mid);
-            padding: 20px 15px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            min-height: 120px;
-        }
-        .calculator-tile:hover {
-            transform: translateY(-5px);
-            background-color: var(--bg-dark);
-            border-color: var(--vermillion);
-            box-shadow: 0 8px 20px rgba(255, 87, 51, 0.4);
-        }
-        .tile-icon {
-            font-size: 2.2rem;
-            margin-bottom: 5px;
-            color: var(--vermillion-light);
-        }
-        .tile-name {
-            font-size: 1rem;
-            line-height: 1.2;
-        }     
-      
-        /* Radio Button Group */
-        .radio-group {
-            display: flex;
-            justify-content: center; /* Center the buttons */
-            gap: 15px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .radio-group label {
-            background-color: var(--bg-mid);
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            border: 1px solid var(--bg-mid);
-            transition: all 0.2s ease-in-out;
-            margin-top: 0; /* Override default label margin */
-        }
-        .radio-group input[type="radio"] {
-            display: none; /* Hide the actual radio button */
-        }
-        .radio-group input[type="radio"]:checked + label {
-            background-color: var(--vermillion);
-            border-color: var(--vermillion);
-            color: white;
-            box-shadow: 0 4px 8px rgba(255, 87, 51, 0.3);
-        }
-        
-        /* -------------------------------------------
-           RESULT SECTION 
-           ------------------------------------------- */
-        .result-section {
-            margin-top: 30px;
-            padding: 15px; 
-            border: 2px solid var(--vermillion-light);
-            background-color: var(--bg-mid);
-            border-radius: 8px;
-            color: var(--stardust);
-        }
-        
-        .result-section p {
-            margin: 10px 0; 
-            font-size: 1rem;
-            display: flex;
-            justify-content: space-between;
-            line-height: 1.4;
-        }
-        
-        .result-value {
-            font-weight: 700;
-            color: white;
-            font-size: 1.1rem;
-            text-align: right;
-            max-width: 50%; 
-        }
-        
-        .final-value {
-            color: var(--vermillion-light); 
-            font-size: 1.2rem; 
-        }
-
-        /* -------------------------------------------
-           SEO CONTENT & FAQ STYLES
-           ------------------------------------------- */
-        .content-section {
-            max-width: 800px;
-            width: 100%;
-            margin: 40px auto;
-            padding: 0 10px;
-            text-align: left;
-        }
-        .content-section h2 {
-            font-size: 1.5rem; 
-            margin-top: 2em; 
-            color: var(--vermillion-light); 
-            border-bottom: 2px solid rgba(255, 87, 51, 0.2); 
-            padding-bottom: 5px; 
-            text-align: center;
-            font-weight: 600;
-        }
-        .content-section h3 {
-            font-size: 1.2rem; 
-            color: white; 
-            margin: 1.5em 0 0.5em; 
-            font-weight: 600;
-        }
-        .formula-box {
-            background-color: var(--bg-mid); 
-            padding: 15px; 
-            border-radius: 6px; 
-            font-size: 0.95rem; 
-            overflow-x: auto;
-        }
-
-        /* FAQ Styling */
-        details {
-            margin-bottom: 15px; 
-            border: 1px solid var(--bg-mid); 
-            border-radius: 8px; 
-            background-color: rgba(36, 36, 62, 0.8); 
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        summary {
-            padding: 18px; 
-            font-weight: 600; 
-            cursor: pointer; 
-            list-style: none; 
-            color: white;
-        }
-        details p {
-            padding: 0 18px 18px 18px; 
-            margin: 0; 
-            border-top: 1px solid var(--bg-mid); 
-            font-size: 1rem;
-        }
-        
-        /* -------------------------------------------
-           BRANDING & UTILITY LINKS
-           ------------------------------------------- */
-        .branding {
-            margin-top: 25px;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
-            text-align: center;
-        }
-        
-        .home-link {
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 50px; 
-        }
-        .home-link a {
-            color: var(--vermillion-light);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        
-        @media (min-width: 600px) {
-            .container {
-                padding: 30px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .radio-group {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .radio-group label {
+        background-color: var(--light-gray);
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 1px solid #E2E8F0;
+        transition: all 0.2s ease-in-out;
+        margin-top: 0;
+        color: var(--primary-text);
+    }
+    .radio-group input[type="radio"] {
+        display: none;
+    }
+    .radio-group input[type="radio"]:checked + label {
+        background-color: var(--primary-green);
+        border-color: var(--primary-green);
+        color: white;
+        box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+    }
+</style>
 </head>
 <body>
 <div class="home-link">
@@ -397,7 +92,7 @@
         <div class="result-section">
             <p>Total Investment: <span id="totalInvestment" class="result-value">---</span></p>
             <p>Estimated Returns (Interest/Growth): <span id="estimatedReturns" class="result-value">---</span></p>
-            <p>Maturity Value: <span id="maturityValue" class="result-value final-value">---</span></p>
+            <p>Maturity Value: <span id="maturityValue" class="result-value emi-value">---</span></p>
         </div>
         
     </div>
@@ -527,47 +222,21 @@
     </div>
 
     <script>
-        // Currency formatter for Indian Rupees (INR)
-        const currencyFormatter = new Intl.NumberFormat('en-IN', {
-            style: 'currency',
-            currency: 'INR',
-            minimumFractionDigits: 2
-        });
+        const currencyFormatter = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 2 });
+        function cleanNumber(str) { return typeof str === 'string' ? parseFloat(str.replace(/,/g, '')) : parseFloat(str); }
+        function formatNumber(num) { return isNaN(num) ? '' : num.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 }); }
 
-        // Function to clean up amount input (remove commas)
-        function cleanNumber(str) {
-            if (typeof str === 'string') {
-                return parseFloat(str.replace(/,/g, ''));
-            }
-            return parseFloat(str);
-        }
-
-        // Function to format number with commas (for principal display)
-        function formatNumber(num) {
-            if (isNaN(num)) return '';
-            return num.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-        }
-
-        // ----------------------------------------------------
-        // Input Formatting (Monthly SIP / Lumpsum Amount)
-        // ----------------------------------------------------
         const sipAmountInput = document.getElementById('sipAmount');
         const lumpsumAmountInput = document.getElementById('lumpsumAmount');
         
-        // Function to apply formatting on blur
         function applyFormatting(inputElement) {
             inputElement.addEventListener('blur', function() {
                 const cleanedValue = cleanNumber(this.value);
-                if (!isNaN(cleanedValue)) {
-                    this.value = formatNumber(cleanedValue);
-                }
+                if (!isNaN(cleanedValue)) { this.value = formatNumber(cleanedValue); }
             });
             inputElement.addEventListener('focus', function() {
-                if (this.value) {
-                    this.value = cleanNumber(this.value);
-                }
+                if (this.value) { this.value = cleanNumber(this.value); }
             });
-            // Initialize with formatting
             if (inputElement.value) {
                 inputElement.value = formatNumber(cleanNumber(inputElement.value));
             }
@@ -575,9 +244,6 @@
         applyFormatting(sipAmountInput);
         applyFormatting(lumpsumAmountInput);
 
-        // ----------------------------------------------------
-        // Radio Button Logic (Show/Hide Fields)
-        // ----------------------------------------------------
         const investmentTypeRadios = document.querySelectorAll('input[name="investmentType"]');
         const sipFields = document.getElementById('sipFields');
         const lumpsumFields = document.getElementById('lumpsumFields');
@@ -587,38 +253,32 @@
                 if (this.value === 'sip') {
                     sipFields.style.display = 'block';
                     lumpsumFields.style.display = 'none';
-                    lumpsumAmountInput.value = ''; // Clear lumpsum if switching to SIP
+                    lumpsumAmountInput.value = '';
                     sipAmountInput.required = true;
                     lumpsumAmountInput.required = false;
 
                 } else {
                     sipFields.style.display = 'none';
                     lumpsumFields.style.display = 'block';
-                    sipAmountInput.value = ''; // Clear SIP if switching to lumpsum
+                    sipAmountInput.value = '';
                     sipAmountInput.required = false;
                     lumpsumAmountInput.required = true;
                 }
             });
         });
 
-        // ----------------------------------------------------
-        // SIP / Lumpsum Calculation Logic
-        // ----------------------------------------------------
         document.getElementById('investmentForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // 1. Get and clean values
             const selectedType = document.querySelector('input[name="investmentType"]:checked').value;
-            const P = (selectedType === 'sip') ? cleanNumber(sipAmountInput.value) : cleanNumber(lumpsumAmountInput.value); // Principal
-            const R_annual = parseFloat(document.getElementById('expectedRate').value); // Annual Rate (%)
-            const T_years = parseInt(document.getElementById('investmentTenure').value); // Tenure (Years)
+            const P = (selectedType === 'sip') ? cleanNumber(sipAmountInput.value) : cleanNumber(lumpsumAmountInput.value);
+            const R_annual = parseFloat(document.getElementById('expectedRate').value);
+            const T_years = parseInt(document.getElementById('investmentTenure').value);
             
-            // Result elements
             const totalInvestmentSpan = document.getElementById('totalInvestment');
             const estimatedReturnsSpan = document.getElementById('estimatedReturns');
             const maturityValueSpan = document.getElementById('maturityValue');
             
-            // Set error states if inputs are invalid
             if (isNaN(P) || isNaN(R_annual) || isNaN(T_years) || P <= 0 || R_annual < 0 || T_years <= 0) {
                 maturityValueSpan.textContent = "Invalid Input";
                 totalInvestmentSpan.textContent = "---";
@@ -630,14 +290,13 @@
             let maturityValue;
             
             if (selectedType === 'sip') {
-                const r_monthly = (R_annual / 12) / 100; // Monthly rate
-                const N_months = T_years * 12; // Total installments (months)
+                const r_monthly = (R_annual / 12) / 100;
+                const N_months = T_years * 12;
                 totalInvestmentAmount = P * N_months;
 
                 if (r_monthly === 0) {
                     maturityValue = totalInvestmentAmount;
                 } else {
-                    // Future Value of an Annuity Due (payments at beginning of period)
                     maturityValue = P * ((Math.pow(1 + r_monthly, N_months) - 1) / r_monthly) * (1 + r_monthly);
                 }
 
@@ -648,14 +307,12 @@
                 if (R_annual_decimal === 0) {
                     maturityValue = P;
                 } else {
-                    // Compound Interest Formula: A = P * (1 + R)^T
                     maturityValue = P * Math.pow(1 + R_annual_decimal, T_years);
                 }
             }
             
             const estimatedReturns = maturityValue - totalInvestmentAmount;
 
-            // 3. Display Results
             if (maturityValue && !isNaN(maturityValue)) {
                 totalInvestmentSpan.textContent = currencyFormatter.format(totalInvestmentAmount);
                 estimatedReturnsSpan.textContent = currencyFormatter.format(estimatedReturns);

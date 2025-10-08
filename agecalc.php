@@ -10,11 +10,12 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </noscript>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,201 +24,7 @@
   gtag('config', 'G-BJ517ZS7X0');
 </script>
     
-    <style>
-        /* Replicating key variables from your index.html for consistent look */
-        :root {
-            --vermillion: #FF5733;
-            --vermillion-light: #FF9A8B;
-            --stardust: rgba(255,255,255,0.9);
-            --bg-dark: #24243E;
-            --bg-mid: #302B63;
-        }
-            
-        /* --- GLOBAL STYLES & BACKGROUND --- */
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: linear-gradient(-45deg, #0F0C29, var(--bg-mid), var(--bg-dark));
-            color: var(--stardust);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 10px; 
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        /* --- HOME LINK STYLING --- */
-        .home-link {
-            display: block;
-            text-align: left;
-            max-width: 900px;
-            width: 95%;
-            margin: 10px auto 0;
-        }
-        .home-link a {
-            color: var(--vermillion-light);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: color 0.3s;
-            font-size: 1rem;
-        }
-        .home-link a:hover {
-            color: var(--vermillion);
-        }
-
-        /* --- CALCULATOR CONTAINER (Inputs) --- */
-        .container {
-            max-width: 95%; 
-            width: 450px; 
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(36, 36, 62, 0.9);
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            border: 1px solid var(--bg-mid);
-        }
-        h1 {
-            font-size: 1.6rem; 
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            color: var(--vermillion-light);
-        }
-        
-        /* Input Styles */
-        label { display: block; margin-top: 15px; font-weight: 600; color: var(--stardust); font-size: 1rem; }
-        input[type="text"], input[type="date"], input[type="number"] { width: 95%; padding: 12px; margin-top: 5px; border: 1px solid var(--bg-mid); border-radius: 6px; background-color: var(--bg-dark); color: white; font-size: 1.05rem; transition: border-color 0.3s; -webkit-appearance: none; appearance: none; }
-        input:focus { outline: none; border-color: var(--vermillion); }
-        button { width: 100%; padding: 15px; margin-top: 30px; background: var(--vermillion); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; font-weight: 700; transition: background-color 0.3s, transform 0.2s; box-shadow: 0 5px 15px rgba(255, 87, 51, 0.4); }
-        button:hover { background-color: #e54d2e; transform: translateY(-1px); }
-
-        /* --- RESULT DISPLAY --- */
-        #ageOutput {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: var(--bg-mid);
-            border-radius: 8px;
-            text-align: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border: 1px solid var(--vermillion);
-        }
-        #ageOutput p {
-            margin: 10px 0;
-        }
-        .result-value {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--vermillion-light);
-            margin-top: 10px;
-        }
-
-        /* --- TOOL GRID STYLES (Copied from Amortization page) --- */
-        .calculator-header {
-            max-width: 900px;
-            width: 95%;
-            margin-top: 40px;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--vermillion-light);
-            text-align: center;
-            padding: 10px 0;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        }
-        .calculator-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            max-width: 900px;
-            width: 95%;
-            margin: 20px auto 40px;
-        }
-        .calculator-tile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background-color: var(--bg-dark);
-            border-radius: 10px;
-            text-decoration: none;
-            color: var(--stardust);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid var(--bg-mid);
-        }
-        .calculator-tile:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-            background-color: var(--bg-mid);
-        }
-        .tile-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        .tile-name {
-            font-weight: 600;
-            text-align: center;
-            font-size: 0.95rem;
-        }
-        
-        /* --- SEO Content Styles --- */
-        .content-section {
-            max-width: 900px;
-            width: 95%;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: rgba(36, 36, 62, 0.7);
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        .content-section h2 {
-            color: var(--vermillion-light);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 5px;
-        }
-        .content-section h3 {
-            color: var(--stardust);
-            font-size: 1.2rem;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        .content-section p, .content-section li {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            color: rgba(255, 255, 255, 0.85);
-        }
-        .content-section ul {
-            padding-left: 25px;
-            list-style: disc;
-        }
-        
-        .branding {
-            margin-top: 20px;
-            color: var(--vermillion-light);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-              .home-link {
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 50px;
-        }
-        .home-link a {
-            color: var(--vermillion-light);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-    </style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -238,10 +45,9 @@
         <button type="submit">Calculate Age</button>
     </form>
     
-    <div id="ageOutput" style="display: none;">
-        <p>Age of Borrower:</p>
-        <span class="result-value" id="resultYears"></span>
-        <p id="resultBreakdown"></p>
+    <div class="result-section" id="ageOutput" style="display: none;">
+        <p>Age of Borrower: <span id="resultYears" class="result-value emi-value">---</span></p>
+        <p>Detailed Breakdown: <span id="resultBreakdown" class="result-value">---</span></p>
     </div>
 </div>
 
@@ -333,9 +139,12 @@
 
         // Time difference in milliseconds
         const diffTime = refDate.getTime() - dob.getTime();
+        const resultYears = document.getElementById('resultYears');
+        const resultBreakdown = document.getElementById('resultBreakdown');
+
         if (diffTime < 0) {
-            document.getElementById('resultYears').textContent = "0";
-            document.getElementById('resultBreakdown').textContent = "DOB cannot be after the reference date.";
+            resultYears.textContent = "Invalid";
+            resultBreakdown.textContent = "DOB cannot be after the reference date.";
             document.getElementById('ageOutput').style.display = 'block';
             return;
         }
@@ -357,10 +166,10 @@
         }
         
         // --- Display Results ---
-        document.getElementById('resultYears').textContent = years;
+        resultYears.textContent = years;
         
-        let breakdownText = `( ${years} Years, ${months} Months, ${days} Days )`;
-        document.getElementById('resultBreakdown').textContent = breakdownText;
+        let breakdownText = `${years} Years, ${months} Months, ${days} Days`;
+        resultBreakdown.textContent = breakdownText;
 
         document.getElementById('ageOutput').style.display = 'block';
     });

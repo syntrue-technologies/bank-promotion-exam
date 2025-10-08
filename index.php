@@ -29,263 +29,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
     </noscript>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BJ517ZS7X0');
-</script>
-
-
-    <style>
-        :root {
-            --vermillion: #FF5733;
-            --vermillion-light: #FF9A8B;
-            --stardust: rgba(255,255,255,0.9);
-            --bg-dark: #24243E;
-            --bg-mid: #302B63;
-            --vh: 1vh;
-        }
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: linear-gradient(-45deg, #0F0C29, var(--bg-mid), var(--bg-dark));
-            color: var(--stardust);
-            min-height: calc(var(--vh, 1vh) * 100);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            overflow-y: auto;
-            box-sizing: border-box;
-        }
-
-        /* --- TYPOGRAPHY & HEADINGS (KEYWORD INTEGRATION) --- */
-        .content-section {
-            max-width: 800px;
-            width: 100%;
-            margin: 40px auto;
-            padding: 0 10px;
-            text-align: left;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 0 0 10px;
-            letter-spacing: 1px;
-            background: linear-gradient(45deg, var(--vermillion-light), #FF6B6B, var(--vermillion));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 12px rgba(255, 87, 51, 0.4));
-        }
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 1.5em 0 0.8em;
-            text-align: center;
-            color: var(--vermillion-light);
-            border-bottom: 2px solid rgba(255, 87, 51, 0.2);
-            padding-bottom: 5px;
-        }
-        h3 {
-            font-size: 1.3rem;
-            margin: 1em 0 0.5em;
-            color: white;
-            font-weight: 600;
-        }
-        p, ul, li {
-            color: var(--stardust);
-            line-height: 1.6;
-            font-size: 1.05rem;
-        }
-        .features ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .features li {
-            background-color: rgba(48, 43, 99, 0.6);
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border-left: 4px solid var(--vermillion);
-        }
-
-        /* --- CALCULATOR TILES SECTION --- */
-        .calculator-header {
-            margin-top: 50px;
-            font-size: 1.8rem;
-            color: white;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .calculator-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto 50px;
-            padding: 0 10px;
-        }
-        .calculator-tile {
-            background-color: var(--bg-mid);
-            padding: 20px 15px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            min-height: 120px;
-        }
-        .calculator-tile:hover {
-            transform: translateY(-5px);
-            background-color: var(--bg-dark);
-            border-color: var(--vermillion);
-            box-shadow: 0 8px 20px rgba(255, 87, 51, 0.4);
-        }
-        .tile-icon {
-            font-size: 2.2rem;
-            margin-bottom: 5px;
-            color: var(--vermillion-light);
-        }
-        .tile-name {
-            font-size: 1rem;
-            line-height: 1.2;
-        }
-
-        /* --- BUTTON & COUNTDOWN --- */
-        .playstore-btn {
-            background: var(--vermillion);
-            color: white;
-            padding: 18px 40px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 10px 20px rgba(255, 87, 51, 0.4);
-            margin-top: 20px;
-        }
-        .playstore-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(255, 87, 51, 0.6);
-        }
-        .playstore-icon {
-            width: 24px;
-            height: 24px;
-        }
-        .countdown {
-            margin-top: 15px;
-            font-weight: 600;
-            color: var(--vermillion-light);
-        }
-        #countdown-timer {
-            font-weight: 700;
-            color: white;
-        }
-
-        /* --- ACCORDION (FAQ) STYLES --- */
-        .faq-section {
-            text-align: left;
-        }
-        details {
-            margin-bottom: 15px;
-            border: 1px solid var(--bg-mid);
-            border-radius: 8px;
-            background-color: rgba(36, 36, 62, 0.8);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        summary {
-            padding: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            outline: none;
-            list-style: none;
-            position: relative;
-            color: white;
-            font-size: 1.05rem;
-        }
-        summary::before {
-            content: '►';
-            margin-right: 15px;
-            transition: transform 0.3s;
-            display: inline-block;
-            color: var(--vermillion);
-        }
-        details[open] summary::before {
-            content: '▼';
-            transform: rotate(90deg);
-        }
-        details p {
-            padding: 0 18px 18px 18px;
-            margin: 0;
-            border-top: 1px solid var(--bg-mid);
-            font-size: 1rem;
-        }
-
-        /* --- BACKGROUND & LEGAL --- */
-        .constellation {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-        /* Keeping original star styles/keyframes for visual effect */
-        .star { position: absolute; background: white; border-radius: 50%; animation: twinkle 2s infinite; }
-        @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 0.8; } }
-        .star:nth-child(1) { top: 15%; left: 20%; width: 2px; height: 2px; animation-delay: 0.5s; }
-        .star:nth-child(2) { top: 25%; left: 80%; width: 3px; height: 3px; animation-delay: 1.2s; }
-        .star:nth-child(3) { top: 60%; left: 45%; width: 2px; height: 2px; animation-delay: 0.8s; }
-        .star:nth-child(4) { top: 30%; left: 10%; width: 4px; height: 4px; animation-delay: 1.0s; }
-        .star:nth-child(5) { top: 50%; left: 75%; width: 2px; height: 2px; animation-delay: 1.4s; }
-        .star:nth-child(6) { top: 10%; left: 60%; width: 3px; height: 3px; animation-delay: 0.3s; }
-        .star:nth-child(7) { top: 70%; left: 40%; width: 2px; height: 2px; animation-delay: 0.6s; }
-        .star:nth-child(8) { top: 80%; left: 15%; width: 3px; height: 3px; animation-delay: 1.5s; }
-        .star:nth-child(9) { top: 45%; left: 90%; width: 2px; height: 2px; animation-delay: 1.1s; }
-        .star:nth-child(10) { top: 5%; left: 30%; width: 3px; height: 3px; animation-delay: 0.7s; }
-        .legal {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.6);
-            margin-top: 40px;
-            padding-bottom: 50px;
-            max-width: 800px;
-        }
-        .legal a {
-            color: var(--vermillion-light);
-            text-decoration: underline;
-        }
-        .hero-text {
-            max-width: 800px;
-            width: 100%;
-            margin: 20px auto;
-        }
-        @media (max-width: 600px) {
-             h1 { font-size: 2rem; }
-             h2 { font-size: 1.5rem; }
-             .calculator-tile { min-height: 100px; padding: 15px 10px; }
-             .tile-icon { font-size: 1.8rem; }
-             .tile-name { font-size: 0.9rem; }
-        }
-    </style>
-  <script type="application/ld+json">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -306,6 +51,7 @@
     "query-input": "required name=search_term_string"
   }
 }
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -592,5 +338,13 @@
             //}
         //}, 1000);
     </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0" defer></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJ517ZS7X0');
+</script>
 </body>
 </html>

@@ -18,7 +18,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
-<script>
+<script src="js/common.js"></script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -132,7 +133,7 @@
 </head>
 <body>
 <div class="home-link">
-    <a href="index.php">🏠 Home</a>
+    <a href="index.html">🏠 Home</a>
 </div>
 <div class="container">
     <h1>Amortization Schedule Calculator</h1>
@@ -180,32 +181,32 @@
 <div class="calculator-header">Essential Banker Tools</div>
 <div class="calculator-grid">
     			
-  	 <a href="emi.php" class="calculator-tile">
+	 <a href="emi.html" class="calculator-tile">
         <span class="tile-icon">💰</span>
         <span class="tile-name">Loan EMI Calculator</span>
      </a>
   
-    <a href="fd.php" class="calculator-tile">
+    <a href="fd.html" class="calculator-tile">
         <span class="tile-icon">🏦</span>
         <span class="tile-name">Fixed Deposit (FD) Calculator</span>
     </a>
     
-    <a href="rd.php" class="calculator-tile">
+    <a href="rd.html" class="calculator-tile">
         <span class="tile-icon">🗓️</span>
         <span class="tile-name">Recurring Deposit (RD) Calculator</span>
     </a>
     
-    <a href="sip.php" class="calculator-tile">
+    <a href="sip.html" class="calculator-tile">
         <span class="tile-icon">📈</span>
         <span class="tile-name">SIP / Lumpsum Calculator</span>
     </a>
     
-    <a href="it.php" class="calculator-tile">
+    <a href="it.html" class="calculator-tile">
         <span class="tile-icon">🧾</span>
         <span class="tile-name">Income Tax Calculator (India)</span>
     </a>
     
-  	<a href="agecalc.php" class="calculator-tile">
+	<a href="agecalc.html" class="calculator-tile">
        	<span class="tile-icon">🎂</span>
        	<span class="tile-name">Age Calculator</span>
     </a>
@@ -247,24 +248,11 @@
 
 <script>
     // Currency formatter for Indian Rupees (INR)
-    const currencyFormatter = new Intl.NumberFormat('en-IN', {
-        style: 'currency',
-        currency: 'INR',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0
-    });
 
-    function cleanNumber(str) {
-        if (typeof str === 'string') {
-            return parseFloat(str.replace(/,/g, ''));
-        }
-        return parseFloat(str);
-    }
 
-    function formatNumber(num) {
-        if (isNaN(num)) return '';
-        return num.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-    }
+
+
+
 
     // Input Formatting Logic
     const principalInput = document.getElementById('principal');
@@ -376,22 +364,22 @@ document.getElementById('amortizationForm').addEventListener('submit', function(
         }
         
         newRow.insertCell().textContent = row.srNo;
-        newRow.insertCell().textContent = currencyFormatter.format(row.principalOSBeg);
-        newRow.insertCell().textContent = currencyFormatter.format(row.emi);
-        newRow.insertCell().textContent = currencyFormatter.format(row.principalRepayment);
-        newRow.insertCell().textContent = currencyFormatter.format(row.interest);
-        newRow.insertCell().textContent = currencyFormatter.format(row.principalOSEnd);
+        newRow.insertCell().textContent = currencyFormatterNoDecimals.format(row.principalOSBeg);
+        newRow.insertCell().textContent = currencyFormatterNoDecimals.format(row.emi);
+        newRow.insertCell().textContent = currencyFormatterNoDecimals.format(row.principalRepayment);
+        newRow.insertCell().textContent = currencyFormatterNoDecimals.format(row.interest);
+        newRow.insertCell().textContent = currencyFormatterNoDecimals.format(row.principalOSEnd);
     });
 
     const totalPayment = P_initial + totalInterestPaid;
     
     const summaryHtml = `
-        <p>Initial Loan Amount: <span class="result-value">${currencyFormatter.format(P_initial)}</span></p>
-        ${M_months > 0 ? `<p>Capitalized Interest (Moratorium): <span class="result-value">${currencyFormatter.format(capitalizedInterest)}</span></p>` : ''}
-        <p>New Principal for Repayment: <span class="result-value">${currencyFormatter.format(P_new)}</span></p>
-        <p>Calculated Repayment EMI: <span class="result-value emi-value">${currencyFormatter.format(emi_repayment)}</span></p>
-        <p>Total Interest Paid: <span class="result-value">${currencyFormatter.format(totalInterestPaid)}</span></p>
-        <p>Total Payment (P + I): <span class="result-value">${currencyFormatter.format(totalPayment)}</span></p>
+        <p>Initial Loan Amount: <span class="result-value">${currencyFormatterNoDecimals.format(P_initial)}</span></p>
+        ${M_months > 0 ? `<p>Capitalized Interest (Moratorium): <span class="result-value">${currencyFormatterNoDecimals.format(capitalizedInterest)}</span></p>` : ''}
+        <p>New Principal for Repayment: <span class="result-value">${currencyFormatterNoDecimals.format(P_new)}</span></p>
+        <p>Calculated Repayment EMI: <span class="result-value emi-value">${currencyFormatterNoDecimals.format(emi_repayment)}</span></p>
+        <p>Total Interest Paid: <span class="result-value">${currencyFormatterNoDecimals.format(totalInterestPaid)}</span></p>
+        <p>Total Payment (P + I): <span class="result-value">${currencyFormatterNoDecimals.format(totalPayment)}</span></p>
     `;
 
     document.getElementById('summaryResults').innerHTML = summaryHtml;

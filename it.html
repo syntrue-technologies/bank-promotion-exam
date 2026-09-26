@@ -15,7 +15,8 @@
     </noscript>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
-<script>
+<script src="js/common.js"></script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -83,7 +84,7 @@
 </head>
 <body>
 <div class="home-link">
-    <a href="index.php">🏠 Home</a>
+    <a href="index.html">🏠 Home</a>
 </div>
     <div class="container">
         <h1>Income Tax Comparison (FY 2024-25)</h1>
@@ -147,32 +148,32 @@
       <div class="calculator-header">Essential Banker Tools</div>
     <div class="calculator-grid">
         
-        <a href="emi.php" class="calculator-tile">
+        <a href="emi.html" class="calculator-tile">
             <span class="tile-icon">💰</span>
             <span class="tile-name">Loan EMI Calculator</span>
         </a>
         
-      	<a href="amortization.php" class="calculator-tile">
+	<a href="amortization.html" class="calculator-tile">
     		<span class="tile-icon">💰</span>
     		<span class="tile-name">Amortization Schedule Calculator</span>
 		</a>
       
-        <a href="fd.php" class="calculator-tile">
+        <a href="fd.html" class="calculator-tile">
             <span class="tile-icon">🏦</span>
             <span class="tile-name">Fixed Deposit (FD) Calculator</span>
         </a>
         
-        <a href="rd.php" class="calculator-tile">
+        <a href="rd.html" class="calculator-tile">
             <span class="tile-icon">🗓️</span>
             <span class="tile-name">Recurring Deposit (RD) Calculator</span>
         </a>
         
-        <a href="sip.php" class="calculator-tile">
+        <a href="sip.html" class="calculator-tile">
             <span class="tile-icon">📈</span>
             <span class="tile-name">SIP / Lumpsum Calculator</span>
         </a>
                 
-      	<a href="agecalc.php" class="calculator-tile">
+	<a href="agecalc.html" class="calculator-tile">
         	<span class="tile-icon">🎂</span>
         	<span class="tile-name">Age Calculator</span>
     	</a>
@@ -225,9 +226,9 @@
     </div>
 
     <script>
-        const currencyFormatter = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
-        function cleanNumber(str) { return typeof str === 'string' ? parseFloat(str.replace(/,/g, '')) : parseFloat(str); }
-        function formatNumber(num) { return isNaN(num) ? '---' : num.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 }); }
+
+
+
 
         const STANDARD_DEDUCTION = 50000;
         const HEALTH_CESS = 0.04;
@@ -282,20 +283,20 @@
             const taxLiabilityNew = taxBeforeCessNew * (1 + HEALTH_CESS);
 
             document.getElementById('taxResultsBody').innerHTML = `
-                <tr><th>Gross Income</th><td>${currencyFormatter.format(grossSalary)}</td><td>${currencyFormatter.format(grossSalary)}</td></tr>
-                <tr><th>Standard Deduction</th><td>${currencyFormatter.format(STANDARD_DEDUCTION)}</td><td>${currencyFormatter.format(STANDARD_DEDUCTION)}</td></tr>
-                <tr><th>Total Other Deductions</th><td>${currencyFormatter.format(totalDeductionsOld - STANDARD_DEDUCTION)}</td><td>${currencyFormatter.format(0)}</td></tr>
-                <tr><th>Taxable Income</th><td>${currencyFormatter.format(taxableOld)}</td><td>${currencyFormatter.format(taxableNew)}</td></tr>
-                <tr class="tax-liability-row"><th>Net Tax Liability</th><td id="taxLiabilityOld">${currencyFormatter.format(taxLiabilityOld)}</td><td id="taxLiabilityNew">${currencyFormatter.format(taxLiabilityNew)}</td></tr>
+                <tr><th>Gross Income</th><td>${currencyFormatterNoDecimals.format(grossSalary)}</td><td>${currencyFormatterNoDecimals.format(grossSalary)}</td></tr>
+                <tr><th>Standard Deduction</th><td>${currencyFormatterNoDecimals.format(STANDARD_DEDUCTION)}</td><td>${currencyFormatterNoDecimals.format(STANDARD_DEDUCTION)}</td></tr>
+                <tr><th>Total Other Deductions</th><td>${currencyFormatterNoDecimals.format(totalDeductionsOld - STANDARD_DEDUCTION)}</td><td>${currencyFormatterNoDecimals.format(0)}</td></tr>
+                <tr><th>Taxable Income</th><td>${currencyFormatterNoDecimals.format(taxableOld)}</td><td>${currencyFormatterNoDecimals.format(taxableNew)}</td></tr>
+                <tr class="tax-liability-row"><th>Net Tax Liability</th><td id="taxLiabilityOld">${currencyFormatterNoDecimals.format(taxLiabilityOld)}</td><td id="taxLiabilityNew">${currencyFormatterNoDecimals.format(taxLiabilityNew)}</td></tr>
             `;
 
             const savings = taxLiabilityOld - taxLiabilityNew;
             const taxSavingsMessage = document.getElementById('taxSavingsMessage');
             if (savings > 0) {
-                taxSavingsMessage.textContent = `You save ${currencyFormatter.format(savings)} by choosing the New Regime!`;
+                taxSavingsMessage.textContent = `You save ${currencyFormatterNoDecimals.format(savings)} by choosing the New Regime!`;
                 taxSavingsMessage.className = 'tax-saving';
             } else if (savings < 0) {
-                taxSavingsMessage.textContent = `You save ${currencyFormatter.format(Math.abs(savings))} by choosing the Old Regime!`;
+                taxSavingsMessage.textContent = `You save ${currencyFormatterNoDecimals.format(Math.abs(savings))} by choosing the Old Regime!`;
                 taxSavingsMessage.className = 'tax-penalty';
             } else {
                 taxSavingsMessage.textContent = `Tax liability is the same under both regimes.`;

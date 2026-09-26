@@ -15,7 +15,8 @@
     </noscript>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ517ZS7X0"></script>
-<script>
+<script src="js/common.js"></script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -55,7 +56,7 @@
 </head>
 <body>
 <div class="home-link">
-    <a href="index.php">🏠 Home</a>
+    <a href="index.html">🏠 Home</a>
 </div>
     <div class="container">
         <h1>Professional SIP vs Lumpsum Calculator</h1>
@@ -100,32 +101,32 @@
       <div class="calculator-header">Essential Banker Tools</div>
     <div class="calculator-grid">
         
-        <a href="emi.php" class="calculator-tile">
+        <a href="emi.html" class="calculator-tile">
             <span class="tile-icon">💰</span>
             <span class="tile-name">Loan EMI Calculator</span>
         </a>
         
-      	<a href="amortization.php" class="calculator-tile">
+	<a href="amortization.html" class="calculator-tile">
     		<span class="tile-icon">💰</span>
     		<span class="tile-name">Amortization Schedule Calculator</span>
 		</a>
             
-        <a href="fd.php" class="calculator-tile">
+        <a href="fd.html" class="calculator-tile">
             <span class="tile-icon">🏦</span>
             <span class="tile-name">Fixed Deposit (FD) Calculator</span>
         </a>
         
-        <a href="rd.php" class="calculator-tile">
+        <a href="rd.html" class="calculator-tile">
             <span class="tile-icon">🗓️</span>
             <span class="tile-name">Recurring Deposit (RD) Calculator</span>
         </a>
         
-        <a href="it.php" class="calculator-tile">
+        <a href="it.html" class="calculator-tile">
             <span class="tile-icon">🧾</span>
             <span class="tile-name">Income Tax Calculator (India)</span>
         </a>
         	
-      	<a href="agecalc.php" class="calculator-tile">
+	<a href="agecalc.html" class="calculator-tile">
         	<span class="tile-icon">🎂</span>
         	<span class="tile-name">Age Calculator</span>
     	</a>
@@ -222,9 +223,9 @@
     </div>
 
     <script>
-        const currencyFormatter = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 2 });
-        function cleanNumber(str) { return typeof str === 'string' ? parseFloat(str.replace(/,/g, '')) : parseFloat(str); }
-        function formatNumber(num) { return isNaN(num) ? '' : num.toLocaleString('en-IN', { minimumFractionDigits: 0, maximumFractionDigits: 0 }); }
+
+
+
 
         const sipAmountInput = document.getElementById('sipAmount');
         const lumpsumAmountInput = document.getElementById('lumpsumAmount');
